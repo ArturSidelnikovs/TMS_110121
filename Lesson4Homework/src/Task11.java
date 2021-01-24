@@ -5,7 +5,7 @@
 
 public class Task11 {
     public static void main(String[] args) {
-        int x = 103;
+        int x = 104;
         if (x >= 0) {
             x++;
             System.out.println(x);
