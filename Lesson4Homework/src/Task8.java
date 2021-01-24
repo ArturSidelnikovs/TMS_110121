@@ -10,7 +10,7 @@ rand.nextInt() ). Это число – количесво денег в руб�
     public static void main(String[] args) {
         Random rand = new Random();
         int x = rand.nextInt(1000);
-        if (x%10==1) {
+        if (x%10==1 | x==1) {
             System.out.println(x + " " + "рубль");
         } else if (x%10==2 | x%10==4 | x%10==3) {
             System.out.println(x +" " + "рубля");
