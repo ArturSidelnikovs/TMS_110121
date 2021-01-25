@@ -7,8 +7,6 @@ public class Task12 {
             System.out.println("2  больше 4");
         } else {
             System.out.println("4 больше 2");
-
         }
-
     }
 }
