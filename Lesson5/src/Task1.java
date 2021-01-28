@@ -10,7 +10,7 @@ public class Task1 {
         int x = (int)(Math.random() * 5);
         for (int i = 1; i <=x; i ++) {
             if (x==0) {
-                break;
+                continue;
             }
             Composition *= i;
         }
