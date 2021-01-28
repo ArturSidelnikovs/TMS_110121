@@ -7,13 +7,14 @@
 public class Task1 {
     public static void main(String[] args) {
         double Composition = 1;
-        int n = 0;
         int x = (int)(Math.random() * 5);
-        while(x>0) {
-            Composition *= x;
-            x --;
-            n++;
+        for (int i = 1; i <=x; i ++) {
+            if (x==0) {
+                break;
+            }
+            Composition *= i;
         }
-        System.out.println("Факториал числа"+" " + n+ " "+"равен"+" "+ Composition);
+
+        System.out.println("Факториал числа"+" " + x+ " "+"равен"+" "+ Composition);
     }
 }
