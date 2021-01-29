@@ -7,16 +7,20 @@ package com.company;
 
 public class Task4 {
     public static void main(String[] args) {
-        int n = 3438;
-        int numberOne = 3;
-        int numberTwo = 4;
-        int numberThree = 3;
-        int numberFour = 8;
-        System.out.println("Число, записанное в обратном порядке 4х значного натурального числа n " +" " + numberFour+numberThree+numberTwo+numberOne );
+        int n  = 5678;
+        int number;
+        int a, b, c, d;
 
+        a = (n % 10) * 10;
+        b = (n % 100) / 10;
+        a = (a + b) * 10;
+        c = (n % 1000) / 100;
+        a = (a + c) * 10;
+        d = (n % 10000) / 1000;
 
+        number = a + d;
 
-
+        System.out.println("Число, записанное в обратном порядке 4х значного натурального числа " + number);
 
     }
 }
