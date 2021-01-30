@@ -6,24 +6,22 @@ package com.company;
 
 public class Task5 {
     public static void main(String[] args) {
-        int number = 1347;
-        int a = 1, b = 3, c = 4, d = 7;
-        System.out.println("a=b="+" "+(a==b)+" "+"a=c="+" "+(a==c)+" "+"a=d="+" "+(a==d));
-        System.out.println("b=c="+" "+ (b==c)+" "+"b=c="+" "+(b==c));
-        System.out.println("d=b="+" "+ (d==b)+" "+"d=c="+" "+(d==c));
+        int number = 1432;
+        int a, b, c, d;
 
+        a = (number % 10000) / 1000;
+        b = (number % 1000) / 100;
+        c = (number % 100) / 10;
+        d = number % 10;
 
+        if (((a != b) & (a != c) & (a != d)) & ((b != c) & (b != d)) & (c != d)) {
+            System.out.println("Цифры числа " + number + " различны");
+        } else {
+            System.out.println("Цифры числа " + number + "не различны");
 
-
-
-
-
-
-
-
-
-
+        }
     }
 }
+
 
 
