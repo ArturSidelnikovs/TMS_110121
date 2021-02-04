@@ -7,7 +7,6 @@ package com;
 public class Task2Metodichka {
     public static void main(String[] args) {
         int ameba [] = new int[24];
-        int hours = 3;
         int kletki = 2;
         for (int i = 3; i <=ameba.length ; i+=3) {
             kletki+=2;
