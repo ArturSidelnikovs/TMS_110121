@@ -26,7 +26,7 @@ public class Task17 {
         }
         for (int i = 0; i < butterFly.length; i++) {
             for (int j = 0; j < butterFly[i].length; j++) {
-                if (butterFly[i][j] == '\0') {
+                if (butterFly[i][j] == '\u0000') {
                     butterFly[i][j] = '0';
                 }
                 System.out.print(butterFly[i][j] + " ");
