@@ -1,3 +1,5 @@
+package TasksForLessons8;
+
 public class Task18 {
     /*
 Найти в строке не только запятые, но и другие знаки препинания. Подсчитать
