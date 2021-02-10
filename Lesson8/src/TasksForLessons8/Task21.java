@@ -14,21 +14,21 @@ public class Task21 {
         StringBuffer str3 = new StringBuffer("Agent пьет вино и слушает джигана, его выгнали со школы");
 
         double start_First_Text = System.currentTimeMillis();
-        for (int i = 0; i < 10; i++) {
+        while (str1.length()==str2.length()){
             str1 += " - Его зовут Гриша";
         }
         double end_First_Text = System.currentTimeMillis();
         double fullTimeFirstText = end_First_Text - start_First_Text;
 
         double start_Seconds_Text = System.currentTimeMillis();
-        for (int i = 0; i < 10; i++) {
+        while (str1.length()==str2.length()) {
             str2.append(" - Его зовут Гриша");
         }
         double end_Seconds_Text = System.currentTimeMillis();
         double full_Time_Second_Text = end_Seconds_Text - start_Seconds_Text;
 
         double start_Thirsd_Text = System.currentTimeMillis();
-        for (int i = 0; i < 10; i++) {
+        while (str1.length()==str2.length()) {
             str3.append(" - Его зовут Гриша");
         }
         double end_Thirsd_Text = System.currentTimeMillis();
