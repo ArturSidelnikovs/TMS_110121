@@ -14,10 +14,7 @@ public interface IStart {
 
     void StartingTheEngine ();
     void Start();
-
-    default boolean PreLaunchCheck () {
-        return prelaunchcheck;
-    }
+    boolean PreLaunchCheck ();
 }
 
 

@@ -12,18 +12,13 @@ true либо false в зависимости от того прошла ли о
 Запустите в космос созданные вами космические корабли используя созданный вами космодром и его метод старт.
 
  */
-public class Shattle extends Cosmodrome implements IStart {
-
-    double a = Math.random() * 11;
+public class Shattle implements IStart {
 
     @Override
     public boolean PreLaunchCheck() {
-        if (a > 3) {
-            System.out.println("Проверка прошла успешно");
-        } else {
-            System.out.println("Проверку пройти не удалось");
-        }
-        return prelaunchcheck;
+        System.out.println("Проверка корабля");
+        int a = (int) (Math.random() * 11);
+        return a>3;
     }
 
     @Override

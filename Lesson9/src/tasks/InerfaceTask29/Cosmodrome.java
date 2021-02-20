@@ -11,35 +11,23 @@ package tasks.InerfaceTask29;
 После обратного отсчета вызываем метод старт переданного объекта.
  */
 
+public class Cosmodrome  {
 
-import com.sun.source.tree.IfTree;
 
-public class Cosmodrome implements IStart {
+    public static void StartShattle (IStart shattle) {
 
-    public static void StartCosmodrome (IStart object) {
-
-        int counter = 10;
-
-        if (object.PreLaunchCheck()) {
-            System.out.println("Предстартовая проверка провалена");
-        } else {
-            object.StartingTheEngine();
+        if (shattle.PreLaunchCheck()) {
             System.out.println("Предстартовая проверка прошла успешно");
+            shattle.StartingTheEngine();
+            int counter = 10;
             for (int i = 10; i > 1; i--) {
                 counter--;
-                System.out.println(counter);
             }
-            object.Start();
+            System.out.println(counter);
+            shattle.Start();
+        } else {
+            System.out.println("Не удалось запустить корабль");
         }
     }
 
-
-        @Override
-        public void StartingTheEngine () {
-        }
-
-        @Override
-        public void Start () {
-        }
-
-    }
+}
