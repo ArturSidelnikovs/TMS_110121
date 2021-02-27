@@ -15,8 +15,7 @@ public class Notepad {
 
     public void setDate(int date) { this.date = date; }
 
-    Notepad () { setDate(9); }
-
+    Notepad () {setDate(9);}
 
          public class Dates {
              public void dddate() {
