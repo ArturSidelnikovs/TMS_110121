@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  Компьютерные комплектующие:
+- Name - название комплектующего
+- Origin - страна производства
+- Price - цена (0 - n USD)
+- Type (должно быть несколько)
+- периферийное либо нет, энергопотребление (ватт), наличие кулера( есть или нет),
+группа комплектующих (устройства ввода-вывода, мультимедийные), порты (COM, USB, LPT)
+- Critical - критично ли наличие комплектующего для работы компьютера.-->
+
+<Components>
+    <Component>
+        <componet model="aD18" color="100">
+           <Name> Video card
+              <Origin> China </Origin>
+              <Cost currency= "USD"> 300 </Cost>
+                  <Type>
+                      <Built-in> true </Built-in>
+                      <Unbuilt> false </Unbuilt>
+                  </Type>
+            </Name>
+        </componet>
+        <Peripheral> true </Peripheral>
+        <PowerUsage type="Watt"> 220 </PowerUsage>
+        <Сooler> true </Сooler>
+        <Functional>
+            <Device> true </Device>
+            <Multimedia> false </Multimedia>
+            <Ports>
+                <Com> false </Com>
+                <USB> false </USB>
+                <LPT> true  </LPT>
+            </Ports>
+        </Functional>
+    <Critical> true </Critical>
+    </Component>
+</Components>

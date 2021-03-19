@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.task.com/File"
+        xmlns:tns="http://www.task.com/File"
+        elementFormDefault="qualified">
+
+<element name = "Components">
+    <complexType>
+        <sequence>
+            <element name="Component" type="tns:Components"/>
+        </sequence>
+    </complexType>
+</element>
+    <complexType name="Components">
+        <sequence>
+            <element name="Origin" type="string" default="China"/>
+            <element name="Cost" type="int" />
+            <element name="Type" type="tns:Type" />
+        </sequence>
+    </complexType>
+    <complexType name="Type">
+        <sequence>
+            <element name="Built-in" type="boolean" default="true"/>
+            <element name="Unbuilt" type="boolean"/>
+        </sequence>
+    <attribute name="model" type="tns:model" use="required"/>
+        <attribute name="color" type="string" use="optional" default="Black"/>
+    </complexType>
+    <simpleType name="model">
+        <restriction base="ID">
+                <pattern value="([a-zA-Z])[a-zA-Z0-9]{7,19}"/>
+        </restriction>
+    </simpleType>
+        <element name="Peripheral" type="boolean"/>
+        <element name="PowerUsage" type="int" />
+    <element name="Cooler" type="boolean"/>
+    <complexType name="Functional">
+        <sequence>
+            <element name="Device" type="boolean" default="true"/>
+            <element name="Multimedia" type="boolean" />
+            <element name="Ports" type="tns:Ports"/>
+        </sequence>
+    </complexType>
+    <complexType name="Ports">
+        <sequence>
+            <element name="Com" type="boolean" default="false"/>
+            <element name="USB" type="boolean" default="false"/>
+            <element name="LPT" type="boolean" default="true"/>
+        </sequence>
+    </complexType>
+    <element name="Critical" type="boolean" default="true"/>
+</schema>
+
+
+
+
+
+
+
