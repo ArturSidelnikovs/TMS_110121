@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--Входные данные следует брать их XML файла
+(прим. для библиотеки: книга/автор(или авторы)/жанр/год/мягкая или твердая обложка
+и т.д.)-->
+
+<Books>
+    <book>
+        <name> War and peace </name>
+        <author> Tolstoy </author>
+        <genre>  ROMANCE  </genre>
+        <year>1829</year>
+        <material> Кожа </material>
+        <type extradition = "Library"> Delivery of the book only in Library </type>
+    </book>
+    <book>
+        <name> Anna Karenina </name>
+        <author> Tolstoy </author>
+        <genre>  ROMANCE  </genre>
+        <year>1877</year>
+        <material> Кожа </material>
+        <type extradition = "Hands"> Delivery of the book only on Hands </type>
+    </book>
+    <book>
+        <name> Mother </name>
+        <author> Gorkiy </author>
+        <genre>  ROMANCE  </genre>
+        <year>1906</year>
+        <material> Кожа </material>
+        <type extradition = "Library"> Delivery of the book only in Library </type>
+    </book>
+    <book>
+        <name> Mother </name>
+        <author> Gorkiy </author>
+        <genre>  ROMANCE  </genre>
+        <year>1906</year>
+        <material> Кожа </material>
+        <type extradition = "Hands"> Delivery of the book only in Hands </type>
+    </book>
+</Books>
